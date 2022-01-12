@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid m-0">
+        <div class="container text-center">
+            <h1>Welcome to our project!</h1>
+            <h2 id="currentTimeDate"></h2>
+        </div>
+    </header>
+    <div class="row d-flex vw-100 m-0">
+        <div class="card col-3 bg-success">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore dolorem corrupti placeat enim iste aperiam dolores similique facilis possimus hic obcaecati voluptatibus non cupiditate doloribus, fugiat suscipit neque explicabo?
+            Laudantium saepe quam molestiae optio, omnis ipsa commodi, quisquam facilis necessitatibus consequuntur accusamus quos, beatae harum quo. Vitae delectus, ab reprehenderit maxime vero saepe aliquid. Distinctio quas earum repellendus assumenda.
+            <button id="clickMe">Click Me!!!</button>
+        </div>
+        <div class="col-9 bg-warning">
+
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Project Name:</label>
+                  <input type="text" class="form-control" id="projectname">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Type of Project:</label>
+                  <select name = "typeOfProject">
+                      <option value = "Computer Architecture" selected>Computer Architecture</option>
+                      <option value = "Java">Java</option>
+                      <option value = "Discrete Mathematics">Discrete Mathematics</option>
+                   </select>
+                </div>
+                <div class="formgroup">
+                    <label for="message-text" class="col-form-label">Hourly Rate:</label>
+                    <input type="text" class="form-control" id="hourlyrate">
+                </div>
+                <div class="formgroup">
+                    <label for="message-text" class="col-form-label">Due Date:</label>
+                    <input type="text" class="form-control" id="datepicker">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Scripts Section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
